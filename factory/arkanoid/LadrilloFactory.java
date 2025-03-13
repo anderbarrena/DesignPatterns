@@ -1,3 +1,5 @@
+package factory.arkanoid;
+
 public class LadrilloFactory {
     private static LadrilloFactory mLadrilloFactory;
     private LadrilloFactory (){} 

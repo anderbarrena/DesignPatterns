@@ -1,3 +1,5 @@
+package factory.arkanoid;
+
 public class Ladrillo2 extends Ladrillo{
     int dureza = 2;
     public Ladrillo2(){}

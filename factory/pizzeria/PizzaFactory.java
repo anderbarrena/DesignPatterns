@@ -1,3 +1,5 @@
+package factory.pizzeria;
+
 public class PizzaFactory {
     private static PizzaFactory mPizzaFactory;
     private PizzaFactory (){} 
@@ -8,12 +10,12 @@ public class PizzaFactory {
 	return mPizzaFactory;
     }
     
-    public Pizza createPizza (String tipo){
-	Pizza miPizza = null;
-	if (tipo.equals("Queso")) { miPizza = new Queso();}
-	else if (tipo.equals( "Pepperoni")) { miPizza = new Pepperoni();}
-	else if (tipo.equals("Carbonara")) { miPizza = new Carbonara();}
-	else if (tipo.equals("Barbacoa")) { miPizza = new Barbacoa();}
-	return miPizza;
+    public Pizza createPizza (String type){
+	Pizza myPizza = null;
+	if (type.equals("Cheese")) { myPizza = new Cheese();}
+	else if (type.equals( "Pepperoni")) { myPizza = new Pepperoni();}
+	else if (type.equals("Carbonara")) { myPizza = new Carbonara();}
+	else if (type.equals("Barbecue")) { myPizza = new Barbecue();}
+	return myPizza;
     }
 }

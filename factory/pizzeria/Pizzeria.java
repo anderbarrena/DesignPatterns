@@ -1,16 +1,18 @@
+package factory.pizzeria;
+
 public class Pizzeria {
     public Pizzeria(){}	
-    public Pizza hacerPizza (String tipo){
-  	Pizza miPizza = PizzaFactory.getPizzaFactory().createPizza(tipo);
-  	miPizza.preparar();
-  	miPizza.hornear();
-  	miPizza.cortar();
-  	miPizza.meterEnCaja();
+    public Pizza hacerPizza (String type){
+  	Pizza miPizza = PizzaFactory.getPizzaFactory().createPizza(type);
+  	miPizza.prepare();
+  	miPizza.bake();
+  	miPizza.cut();
+  	miPizza.putInAbox();
         return miPizza;
     }
     public static void main(String [ ] args)
     {
   	Pizzeria miPizzeria = new Pizzeria();      
-  	Pizza bbPizza = miPizzeria.hacerPizza("Barbacoa");
+  	Pizza bbPizza = miPizzeria.hacerPizza("Cheese");
     }
 }

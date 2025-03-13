@@ -1,3 +1,5 @@
+package factory.arkanoid;
+
 public abstract class Ladrillo{
     int dureza = 0;
     protected Ladrillo (){}

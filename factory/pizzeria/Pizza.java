@@ -1,7 +1,9 @@
+package factory.pizzeria;
+
 public abstract class Pizza {
     protected Pizza(){} 
-    public abstract void preparar();
-    public void hornear() {System.out.println("Pizza en el horno.");}
-    public void cortar() {System.out.println("Pizza cortada.");}
-    public void meterEnCaja() {System.out.println("Pizza en la caja.");}
+    public abstract void prepare();
+    public void bake() {System.out.println("baking Pizza.");}
+    public void cut() {System.out.println("cutting Pizza.");}
+    public void putInAbox() {System.out.println("Pizza in da box!");}
 }

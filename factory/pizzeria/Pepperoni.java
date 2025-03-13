@@ -1,4 +1,6 @@
+package factory.pizzeria;
+
 public class Pepperoni extends Pizza{
     public Pepperoni() {}
-    public void preparar() {System.out.println("Pizza Pepperoni preparada.");} 
+    public void prepare() {System.out.println("Pizza Pepperoni on da way!");}
 }

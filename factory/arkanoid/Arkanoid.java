@@ -1,3 +1,5 @@
+package factory.arkanoid;
+
 import java.util.*;
 public class Arkanoid {
     private static  Arkanoid mArkanoid;
