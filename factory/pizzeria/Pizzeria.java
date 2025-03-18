@@ -2,8 +2,8 @@ package factory.pizzeria;
 
 public class Pizzeria {
     public Pizzeria(){}	
-    public Pizza hacerPizza (String type) {
-        Pizza miPizza = PizzaFactory.getPizzaFactory().createPizza(type);
+    public Pizza generatePizza (String type) {
+        Pizza miPizza = PizzaFactory.getPizzaFactory().generatePizza(type);
         miPizza.prepare();
         miPizza.bake();
         miPizza.cut();
@@ -12,7 +12,7 @@ public class Pizzeria {
     }
     public static void main(String [ ] args)
     {
-  	Pizzeria miPizzeria = new Pizzeria();      
-  	Pizza bbPizza = miPizzeria.hacerPizza("Cheese");
+  	    Pizzeria miPizzeria = new Pizzeria();
+  	    Pizza bbPizza = miPizzeria.generatePizza("Cheese");
     }
 }

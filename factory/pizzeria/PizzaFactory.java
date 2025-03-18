@@ -10,7 +10,7 @@ public class PizzaFactory {
 	return mPizzaFactory;
     }
     
-    public Pizza createPizza (String type){
+    public Pizza generatePizza (String type){
 	Pizza myPizza = null;
 	if (type.equals("Cheese")) { myPizza = new Cheese();}
 	else if (type.equals( "Pepperoni")) { myPizza = new Pepperoni();}
