@@ -13,9 +13,9 @@ public class PizzaFactory {
     public Pizza generatePizza (String type){
 	Pizza myPizza = null;
 	if (type.equals("Cheese")) { myPizza = new Cheese();}
-	else if (type.equals( "Pepperoni")) { myPizza = new Pepperoni();}
-	else if (type.equals("Carbonara")) { myPizza = new Carbonara();}
-	else if (type.equals("Barbecue")) { myPizza = new Barbecue();}
+	if (type.equals( "Pepperoni")) { myPizza = new Pepperoni();}
+	if (type.equals("Carbonara")) { myPizza = new Carbonara();}
+	if (type.equals("Barbecue")) { myPizza = new Barbecue();}
 	return myPizza;
     }
 }
