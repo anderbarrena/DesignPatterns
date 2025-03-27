@@ -13,7 +13,7 @@ public class Composite implements Shape {
     public void paint() {
 	    Iterator<Shape> it = components.iterator();
     	while(it.hasNext()){
-    	    Shape f = it.next();
+            Shape f = it.next();
     	    f.paint();
     	}
     }
