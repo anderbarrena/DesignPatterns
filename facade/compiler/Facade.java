@@ -1,19 +1,21 @@
-public class CompiladorFacade {
+package facade.compiler;
 
-    private static CompiladorFacade mCompiladorFacade = new CompiladorFacade();
+public class Facade {
+
+    private static Facade myFacade = new Facade();
 	private Scanner scanner;
 	private Parser parser;
 	private NodeBuilder nodeBuilder;
 	private CodeGenerator codeGenerator;
 
-	private CompiladorFacade() {
+	private Facade() {
 	    scanner = new Scanner();
 	    parser = new Parser();
 	    nodeBuilder = new NodeBuilder();
 	    codeGenerator = new CodeGenerator();
 	}
-	public static CompiladorFacade getFacade() {
-	    return mCompiladorFacade;
+	public static Facade getFacade() {
+	    return myFacade;
 	}
 	public void compile(String pFile) {
 	    String file = scanner.scan(pFile);
